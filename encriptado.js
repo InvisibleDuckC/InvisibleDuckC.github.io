@@ -1,6 +1,3 @@
-let texto = "fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!";
-let texto1 = "entrando en la sala de video encontre a una niña sentada en el suelo";
-
 let cajaTexto = document.getElementsByClassName("caja-texto");
 let textoNoFound = document.getElementsByClassName("texto-no-encontrado");
 let textoEncriptado = document.getElementsByClassName("texto-encriptado");
