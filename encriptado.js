@@ -1,8 +1,6 @@
 let cajaTexto = document.getElementsByClassName("caja-texto");
 let textoNoFound = document.getElementsByClassName("texto-no-encontrado");
 let textoEncriptado = document.getElementsByClassName("texto-encriptado");
-document.getElementById
-
 let parrafoCreado = false;
 
 const normalize = (function () {
@@ -123,7 +121,6 @@ function mostrarTextoEncriptado(){
     nuevoParrafo.appendChild(textParrafo);
     ocultarTextoNoFound();
     parrafoCreado = true;
-    console.log(textParrafo);
 }
 
 function mostrarTextoDesencriptado(){
@@ -139,7 +136,6 @@ function mostrarTextoDesencriptado(){
     nuevoParrafo.appendChild(textParrafo);
     ocultarTextoNoFound();
     parrafoCreado = true;
-    console.log(textParrafo);
 }
 
 function borrarParrafoCreado(){
