@@ -115,7 +115,7 @@ function mostrarTextoEncriptado(){
     }
     let nuevoParrafo = document.createElement("p");
     nuevoParrafo.classList.add("texto-creado");
-    let textParrafo = document.createTextNode(encript(normalize(cajaTexto[0].value)));
+    let textParrafo = document.createTextNode(encript(normalize(cajaTexto[0].value.toLowerCase())));
     let datoNuevo = document.getElementsByClassName("mostrar-texto");
     datoNuevo[0].appendChild(nuevoParrafo);
     nuevoParrafo.appendChild(textParrafo);
