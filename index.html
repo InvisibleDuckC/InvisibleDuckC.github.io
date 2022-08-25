@@ -1,56 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
+    <title>Calculadora Draftosaurus</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Encriptador</title>
-
 </head>
 <body>
-    <header>
-        <h1 class="logo"><img src="./images/Vector.png" alt=""></h1>
-    </header>
-    <main class="main">
-        <div class="center">
-            <section class="interfaz-encriptador">
-                <div class="bloque-texto">
-                    <textarea class="caja-texto" cols="35" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-                </div>
-                <div class="bloque-botones">
-                    <div class="mensaje-advertencia"><img src="./images/circle-exclamation.png" alt=""><p>Solo letras minúsculas y sin acentos</p></div>
-                    <div class="botones">
-                        <button class="encriptar" onclick="mostrarTextoEncriptado()"><p>Encriptar</p></button>
-                        <button class="desencriptar" onclick="mostrarTextoDesencriptado()"><p>Desencriptar</p></button>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="interfaz-procesado">
-                <div class="texto-encriptado">
-                    <div class="mostrar-texto">
-                    </div>
-                    <button class="copiar" onclick="copiar()"><p>Copiar</p></button>
-                </div>
-                <div class="texto-no-encontrado">
-                    <img class="muñeco" src="./images/Muñeco.png" alt="muñeco mensaje no encontrado">
-                    <div class="texto-capsula">
-                        <p class="text1">Ningún mensaje fue encontrado</p>
-                        <p class="text2">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
+    <main>
+        <section class="cafeteria">
+            <div class="iguales">
+                <img class="icono-zona" src="./images/iguales.png" alt="iguales">
+                <div class="top-section">
+                    <div class="campo-0">
 
+                    </div>
+                    <div class="agregar-dino">
+                        <button class="triceratops" onclick="agregarDino(0,0)"></button>
+                        <button class="apatosaurio" onclick="agregarDino(0,1)"></button>
+                        <button class="braquiosaurio" onclick="agregarDino(0,2)"></button>
+                        <button class="espinosaurio" onclick="agregarDino(0,3)"></button>
+                        <button class="t-rex" onclick="agregarDino(0,4)"></button>
+                        <button class="estegosaurio" onclick="agregarDino(0,5)"></button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="trio">
+                <img class="icono-zona" src="./images/trio.png" alt="">
+                <div class="top-section">
+                    <div class="campo-1">
+                    
+                    </div>
+                    <div class="agregar-dino">
+                        <button class="triceratops" onclick="agregarDino(1,0)"></button>
+                        <button class="apatosaurio" onclick="agregarDino(1,1)"></button>
+                        <button class="braquiosaurio" onclick="agregarDino(1,2)"></button>
+                        <button class="espinosaurio" onclick="agregarDino(1,3)"></button>
+                        <button class="t-rex" onclick="agregarDino(1,4)"></button>
+                        <button class="estegosaurio" onclick="agregarDino(1,5)"></button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="parejas">
+                <img class="icono-zona" src="./images/parejas.png" alt="parejas">
+                <div class="top-section">
+                    <div class="campo-2">
+                    
+                    </div>
+                    <div class="agregar-dino">
+                        <button class="triceratops" onclick="agregarDino(2,0)"></button>
+                        <button class="apatosaurio" onclick="agregarDino(2,1)"></button>
+                        <button class="braquiosaurio" onclick="agregarDino(2,2)"></button>
+                        <button class="espinosaurio" onclick="agregarDino(2,3)"></button>
+                        <button class="t-rex" onclick="agregarDino(2,4)"></button>
+                        <button class="estegosaurio" onclick="agregarDino(2,5)"></button>
+                    </div>
+                </div>                
+            </div>
+            <img class="cartel" src="./images/cartel-cafeteria.png" alt="cartel cafeteria">
+        </section>
+        <section class="rio">
+            <div class="separador"></div>
+            <div class="top-section">
+                <div class="campo-3">
+                    
+                </div>
+                <div class="agregar-dino" id="agregar-rio">
+                    <button class="triceratops" onclick="agregarDino(3,0)"></button>
+                    <button class="apatosaurio" onclick="agregarDino(3,1)"></button>
+                    <button class="braquiosaurio" onclick="agregarDino(3,2)"></button>
+                    <button class="espinosaurio" onclick="agregarDino(3,3)"></button>
+                    <button class="t-rex" onclick="agregarDino(3,4)"></button>
+                    <button class="estegosaurio" onclick="agregarDino(3,5)"></button>
+                </div>
+            </div>
+            
+        </section>
+        <section class="baños">
+            <div class="mvp">
+                <img class="icono-zona" src="./images/mvp.png" alt="">
+                <div class="top-section">
+                    <div class="campo-4">
+                    
+                    </div>
+                    <div class="agregar-dino" id="agregar-mvp">
+                        <button class="triceratops" onclick="agregarDino(4,0)"></button>
+                        <button class="apatosaurio" onclick="agregarDino(4,1)"></button>
+                        <button class="braquiosaurio" onclick="agregarDino(4,2)"></button>
+                        <button class="espinosaurio" onclick="agregarDino(4,3)"></button>
+                        <button class="t-rex" onclick="agregarDino(4,4)"></button>
+                        <button class="estegosaurio" onclick="agregarDino(4,5)"></button>
+                    </div>
+                    <div class="confirmar-valor">
+                        <p>APLICA EL BONUS?</p>
+                        <div class="confirmar-botones">
+                            <button class="asignar-true" onclick="cambiarBool(true)">SI</button>
+                            <button class="asignar-false" onclick="cambiarBool(false)">NO</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dispares">
+                <img class="icono-zona" src="./images/dispares.png" alt="">
+                <div class="top-section">
+                    <div class="campo-5">
+                    
+                    </div>
+                    <div class="agregar-dino">
+                        <button class="triceratops" onclick="agregarDino(5,0)"></button>
+                        <button class="apatosaurio" onclick="agregarDino(5,1)"></button>
+                        <button class="braquiosaurio" onclick="agregarDino(5,2)"></button>
+                        <button class="espinosaurio" onclick="agregarDino(5,3)"></button>
+                        <button class="t-rex" onclick="agregarDino(5,4)"></button>
+                        <button class="estegosaurio" onclick="agregarDino(5,5)"></button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="unico">
+                <img class="icono-zona" src="./images/solito.png" alt="">
+                <div class="top-section">
+                    
+                    <div class="campo-6">
+                    
+                    </div>
+                    <div class="agregar-dino">
+                        <button class="triceratops" onclick="agregarDino(6,0)"></button>
+                        <button class="apatosaurio" onclick="agregarDino(6,1)"></button>
+                        <button class="braquiosaurio" onclick="agregarDino(6,2)"></button>
+                        <button class="espinosaurio" onclick="agregarDino(6,3)"></button>
+                        <button class="t-rex" onclick="agregarDino(6,4)"></button>
+                        <button class="estegosaurio" onclick="agregarDino(6,5)"></button>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <img class="cartel" src="./images/cartel-baños.png" alt="cartel baños">
+        </section>
         
-        <script src="./encriptado.js"></script>
+        <script src="./main.js"></script>
     </main>
-
     <footer>
-        <p>Desarrollado por InvisibleDuckC - <a target="_blank" href="https://github.com/InvisibleDuckC">Github</a></p>
+        <div class="bloque-puntaje">
+            <p>Aqui va tu puntaje: </p>
+            <p class="puntaje">-</p>
+<!--             <button class="calcular-valor" onclick="actualizar(conjunto)">Calcular</button> -->
+        </div>
     </footer>
-
 </body>
 </html>
+

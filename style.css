@@ -1,241 +1,337 @@
-.center{
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    border: 5px solid black;
+    flex-direction: row;
+    justify-content: center;
     width: 940px;
-    display: flex;
-    flex-direction:row;
-    align-content: center;
-    flex-wrap: nowrap;
-    justify-content: center;
+    align-items: stretch;
 }
 
-.main{
-    width: 100%;
+.cafeteria{
+/*     border: 5px solid red; */
+    background: rgb(140, 70, 0);
+    display: flex;
+    flex-direction: column;
+    width: 42.5%;
+}
+
+.rio{
+    width: 15%;
+    background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
-.logo{
-    margin: 10px 10%;
-}
-
-.interfaz-encriptador{
+.baños{
+/*     border: 5px solid green; */
+    background: rgb(140, 70, 0);
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0px 40px;
+    justify-content:center;
+    align-items: flex-end;
+    width: 42.5%;
 }
 
-.bloque-texto{
-    display: flex;
-}
-
-.caja-texto{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+.iguales{
+    /* border: 5px solid black ; */
+    background: rgb(0, 170, 0);
+    height: 100px;
     width: 100%;
-    color: #0A3871;
-    border: none;
-    background: #F3F5FC;
-}
-
-/* Seccion inferior, botones */
-
-.bloque-botones{
-    display: flex;
-    flex-direction: column;
-}
-
-.mensaje-advertencia{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 8px;
+    justify-content: center;
 }
-
-.mensaje-advertencia p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    color: #495057;
-    opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.botones{
+.trio{
+    /* border: 5px solid black ; */
+    background: rgb(0, 170, 0);
+    height: 100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-}
-
-.encriptar{             /*  */
-    display: flex;
-    padding: 10px;
-    gap: 8px;
-    width: 50%;
-    background: #0A3871;
-    border-radius: 24px;
-    border: 1px solid black;    
-    transition: 500ms;
-}
-
-.encriptar:hover, .desencriptar:hover, .copiar:hover{       /*  */
-    opacity: 80%;
-}
-
-.encriptar p, .desencriptar p, .copiar p{           /*  */
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
-    flex-grow: 1;
-}
-
-.desencriptar{          /*  */
-    display: flex;
-    padding: 10px;
-    gap: 8px;
-    width: 50%;
-    background: #246de4;
-    border-radius: 24px;
-    border: 1px solid black;
-    transition: 500ms;
-}
-
-.interfaz-procesado{
-    display: flex;
-    padding: 10px;
-    width: 50%;
-    vertical-align: middle;
-    flex-direction: column;
-}
-
-/* Seccion texto no encontrado */
-
-.texto-no-encontrado{
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+.parejas{
+    /* border: 5px solid black ; */
+    background: rgb(140, 70, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.mvp{
+    /* border: 5px solid black ; */
+    background: rgb(0, 170, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.dispares{
+    /* border: 5px solid black ; */
+    background: rgb(140, 70, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.unico{
+    /* border: 5px solid black ; */
+    background: rgb(140, 70, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.muñeco{
+.icono.zona{
+    width: 10%;
+}
+
+.top-section{
     display: flex;
+    flex-direction: column;
+    /* border: 5px solid olivedrab; */
     width: 90%;
+    height: 100%;
 }
 
-.texto-capsula{
+.rio .top-section{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-}
-
-.text1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 130%;
-    text-align: center;
-    color: #343A40;
-}
-
-.text2{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #495057;
-}
-
-/* Seccion texto encriptado */
-
-.texto-encriptado{
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    display: flex;
-    vertical-align:middle;
-    width: 100%;
+    /* border: 5px solid olivedrab; */
+    width: 90%;
     height: 100%;
+/*     align-items: center;
+    justify-content: space-around; */
+}
+
+.separador{
+    width: 50px;
+    height: 50px;
+}
+
+.campo-0, .campo-1, .campo-2, .campo-4, .campo-5, .campo-6{
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    border: 5px solid black;
+    margin: 10px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.campo-3{
+    width: 80%;
+    height: 70%;
+    margin: 10px;
+    border-radius: 15px;
+    border: 5px solid black;
+    background: white;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.mostrar-texto{
-    height: 70%;
-    width: 90%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    color: #495057;
+.agregar-dino{
+    display: flex;
+    width: 95%;
+    height: 50%;
+    margin: 5px;
+    flex-direction: row;
+    justify-content: center;
+/*     border: 1px solid black; */
 }
 
-.copiar{
+.agregar-dino button{
+    width: 20%;
+    border-radius: 15px;
+    margin: 0 5px;
+}
+
+#agregar-rio{
     display: flex;
-    padding: 10px;
-    gap: 8px;
+    width: 95%;
+    height: 40%;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#agregar-rio button{
     width: 50%;
-    background: #6a96dc;
-    border-radius: 24px;
-    border: 1px solid black;
-    transition: 500ms;
+    height: 30%;
+    border-radius: 15px;
+    margin: 2px;
+}
+
+.confirmar-valor{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*     border: 1px solid black; */
+}
+
+.confirmar-valor p{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.confirmar-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 3px;
+}
+
+.confirmar-botones button{
+    width: 45%;
+    border-radius: 15px;
+}
+
+.triceratops{
+    background: yellow;
+}
+.apatosaurio{
+    background: green;
+}
+.braquiosaurio{
+    background: plum;
+}
+.espinosaurio{
+    background: orange;
+}
+.t-rex{
+    background: red;
+}
+.estegosaurio{
+    background: rgb(0, 157, 255);
+}
+.invalid{
+    background: gray;
+}
+
+.campo-3 .dino-agregado{
+    width: 30%;
+    height: 10%;
+    border: 2px solid black;
+}
+
+.dino-agregado{
+    width: 10%;
+    height: 30%;
+    border: 2px solid black;
 }
 
 footer{
     display: flex;
-    margin-top: 30px;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
-@media screen and (max-width: 770px) {
-    .center{
-        width: 100%;
-        flex-wrap: wrap;
+.bloque-puntaje{
+/*     border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartel{
+    width: 50px;
+    display: flex;
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        width: 760px;
+    }
+
+    main{
         flex-direction: column;
         align-items: center;
+        width: 760px;
     }
-    .muñeco{
-        display: none;
+
+    .cafeteria, .rio, .baños{
+        width: 100%;
     }
-    .interfaz-encriptador{
+
+    .rio{
+        height: 100px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .campo-3{
         width: 90%;
+        height: 100%;
+        border-radius: 15px;
+        border: 5px solid black;
+        margin: 10px;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
     }
-    .interfaz-procesado{
-        width: 90%;
+
+    .campo-3 .dino-agregado{
+        width: 10%;
+        height: 20%;
     }
-    .encriptar, .desencriptar, .copiar{
-        width: 90%;
+
+    #agregar-rio{
+        display: flex;
+        width: 95%;
+        height: 50%;
+        margin: 5px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #agregar-rio button{
+        width: 20%;
+        height: 90%;
+        border-radius: 15px;
+        margin: 5px;
     }
 }
 
 @media screen and (max-width: 425px){
-    .botones{
-        flex-direction: column;
-        align-items: center;
+    body{
+        width: 420px;
+    }
+
+    main{
+        width: 420px;
     }
 }
